@@ -9,7 +9,7 @@ Known Dependencies/Prerequisites (and their api keys):
 5. pyvona (https://github.com/zbears/pyvona/) and api access from http://developer.ivona.com
 6. pyperclip (https://pypi.python.org/pypi/pyperclip/)
 7. webbrowser - should be part of the core python packages. 
-___
+---
 This has been extensively tested in Windows 8 - 64bit, with Python 3.4. Here's a video demo of the assistant:
 
 https://www.youtube.com/watch?v=A879U7Hj5bw
