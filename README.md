@@ -2,7 +2,7 @@
 
 ## Known Dependencies/Prerequisites (and their api keys):
 
-### 1. speech_recognition (https://github.com/Uberi/speech_recognition/)
+#### 1. speech_recognition (https://github.com/Uberi/speech_recognition/)
 ### 2. pygame (http://pygame.org/)
 ### 3. wolframalpha (https://pypi.python.org/pypi/wolframalpha/3.0) and api access from https://developer.wolframalpha.com/portal/
 ### 4. wikipedia (https://github.com/goldsmith/Wikipedia)
