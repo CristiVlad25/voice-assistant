@@ -11,7 +11,8 @@ Known Dependencies/Prerequisites (and their api keys):
 7. **webbrowser** - should be part of the core python packages. 
 
 ---
-This has been extensively tested in Windows 8 - 64bit, with Python 3.4. Here's a video demo of the assistant:
+This has been extensively tested in Windows 8 - 64bit, with Python 3.4. Here are 2 video demos of the assistant:
 
-https://www.youtube.com/watch?v=A879U7Hj5bw
+1. https://www.youtube.com/watch?v=A879U7Hj5bw
+2. https://www.youtube.com/watch?v=VAtijn3GnFo
 
