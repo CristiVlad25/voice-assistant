@@ -1,6 +1,6 @@
 # This has been extensively tested in Windows 8 - 64bit, with Python 3.4
 # You need to install the following modules: speech_recognition, pygame, wolframalpha, ,wikipedia, 
-# pyvona, pyperclip and webbrowser
+# pyvona, pyperclip, psutil and webbrowser
 
 import speech_recognition as sr
 import webbrowser
@@ -11,6 +11,7 @@ import os
 import pyvona
 import pyperclip
 import win32com.client
+import psutil
 
 v = pyvona.create_voice('access_key', 'secret_key')                                         #api for ivona
 v.voice_name = 'Emma'                                                                       #selecting ivona voice
@@ -46,6 +47,8 @@ paint = 'open paint'
 lsp = 'silence please'
 lsc = 'resume listening'
 stoplst = 'stop listening'
+btry = 'battery percentage'
+cpu = 'cpu'
 
 while True:                                                                                 #The main loop
 
@@ -104,6 +107,15 @@ while True:                                                                     
                     v.speak('The page does not exist')
                     continue
 
+            elif btry in message:
+                    battery = psutil.sensors_battery()
+                    v.speak("Battery is at")
+                    v.speak(battery.percent )
+
+            elif cpu in message:
+                    usage = str(psutil.cpu_percent())
+                    v.speak('CPU is at'+ usage)
+                    
             elif sc in message:                                                             #what happens when sc keyword is recognized
 
                 try:
